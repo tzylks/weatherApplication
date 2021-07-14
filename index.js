@@ -254,7 +254,7 @@ document.querySelector('#resources').addEventListener('click', () => {
 
     hTwo.style.color = '#F1F1F1'
     hTwo.textContent = 'Resources'
-    pContent.textContent = 'Dead Ass'
+    pContent.innerHTML = '<p>API: https://github.com/robertoduessmann/weather-api </p>' 
 
     aboutDiv.append(hTwo, hR, hRTwo, pContent)
 })
@@ -273,6 +273,23 @@ document.querySelector('#contact').addEventListener('click', () => {
 
     aboutDiv.append(hTwo, hR, hRTwo, pContent)
 })
+
+document.querySelector('#homePage').addEventListener('click', () => {
+    let hR = document.createElement('hr')
+    let hRTwo = document.createElement('hr')
+    let hTwo = document.createElement('h2')
+    let pContent = document.createElement('p')
+
+    aboutDiv.innerHTML = ''
+
+    hTwo.style.color = '#F1F1F1'
+    hTwo.textContent = 'Current Weather in Your Area'
+    
+
+    aboutDiv.append(hTwo, hR, hRTwo, pContent)
+})
+
+
 
 // Patch
 
